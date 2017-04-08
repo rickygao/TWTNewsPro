@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public final class NewsApiManager {
 
     private static final String BASE_URL = "http://open.twtstudio.com/api/";
-    private static final int CONNECT_TIME_OUT = 30;
+    private static final int CONNECT_TIME_OUT = 10;
     private OkHttpClient mClient;
     private Retrofit mRetrofit;
     private NewsApi mNewsApi;
