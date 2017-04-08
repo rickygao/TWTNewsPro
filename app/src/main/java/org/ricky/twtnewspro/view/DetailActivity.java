@@ -56,7 +56,9 @@ public class DetailActivity extends AppCompatActivity implements DetailControlle
 
     @Override
     public void onInitDetail(NewsDetailDataBean bean) {
-        String data = bean.getContent();
+        String content = bean.getContent();
+        String subject = bean.getSubject();
+        String data = String.format("<h2>%s</h2>%s", subject, content);
         mContentWebview.loadData(data, "text/html; charset=utf-8", null);
     }
 
